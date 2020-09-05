@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 5rem;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.App {
+    display: grid;
+    height: 100vh;
+    place-content: center center;
+    background: pink;
+
+    .btn-wrapper {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+        button {
+            font-size: 2rem;
+            padding: 0.5rem;
+            background: white;
+            color: black;
+            border: solid 3px white;
+
+            &:hover,
+            &:focus {
+                background: gray;
+                color: white;
+            }
+
+            &.unitChange {
+                padding: 0.3rem;
+                // background: transparent;
+
+            }
+
+            &.tempChange {
+                padding: 0 1rem;
+                border-radius: 50px;
+            }
+        }
+    }
+}

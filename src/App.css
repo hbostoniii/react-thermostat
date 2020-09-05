@@ -1,38 +1,56 @@
-.App {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5rem;
+  opacity: 0.6;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  place-content: center center;
+  background: pink;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .btn-wrapper button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  background: white;
+  color: black;
+  border: solid 3px white;
+}
+
+.App .btn-wrapper button:hover, .App .btn-wrapper button:focus {
+  background: gray;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App .btn-wrapper button.unitChange {
+  padding: 0.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .btn-wrapper button.tempChange {
+  padding: 0 1rem;
+  border-radius: 50px;
 }
+/*# sourceMappingURL=App.css.map */
