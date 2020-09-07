@@ -17,7 +17,8 @@ h1 {
     display: grid;
     height: 100vh;
     place-content: center center;
-    background: pink;
+    background: #333;
+    color: #ffffff;
 
     .btn-wrapper {
         display: flex;
@@ -27,14 +28,14 @@ h1 {
         button {
             font-size: 2rem;
             padding: 0.5rem;
-            background: white;
-            color: black;
-            border: solid 3px white;
+            background: #333;
+            color: #ffffff;
+            border: solid 3px #ffffff;
 
             &:hover,
             &:focus {
-                background: gray;
-                color: white;
+                background: #ffffff;
+                color: #333;
             }
 
             &.unitChange {

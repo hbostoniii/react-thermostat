@@ -18,20 +18,20 @@ function App() {
 
 	const fahrenheitStyles = () => {
 		if (temp >= 86) {
-			return { color: "red" };
+			return { color: "#ff7070" };
 		} else if (temp <= 50) {
-			return { color: "blue" };
+			return { color: "#5e8ef8" };
 		}
-		return { color: "black" };
+		return { color: "#fff" };
 	};
 
 	const celsiusStyles = () => {
 		if (temp >= 30) {
-			return { color: "red" };
+			return { color: "#ff7070" };
 		} else if (temp <= 10) {
-			return { color: "blue" };
+			return { color: "#5e8ef8" };
 		}
-		return { color: "black" };
+		return { color: "#fff" };
 	};
 
 	return (
